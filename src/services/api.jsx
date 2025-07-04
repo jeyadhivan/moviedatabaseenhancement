@@ -1,5 +1,6 @@
-const API_KEY = "744baf66a0b8b385b30b023362d286aa";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
+
 
 // Updated fetchMovies to handle pagination dynamically
 const fetchMovies = (url, params = {}) =>
